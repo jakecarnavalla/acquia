@@ -2,7 +2,7 @@
   "$id": "acquia_personconnector",
   "$schema": "https://schema.yext.com/config/km/connector/v1",
   "displayName": "Acquia Person Connector",
-  "entityType": "yext/person",
+  "entityType": "yext/ce_person",
   "source": {
     "sourceConfig": {
       "apiPullConfig": {
