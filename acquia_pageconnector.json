@@ -2,7 +2,7 @@
   "$id": "acquia_pageconnector",
   "$schema": "https://schema.yext.com/config/km/connector/v1",
   "displayName": "Acquia Page Connector",
-  "entityType": "yext/page",
+  "entityType": "yext/ce_page",
   "source": {
     "sourceConfig": {
       "apiPullConfig": {
