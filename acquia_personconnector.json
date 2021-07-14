@@ -2,7 +2,7 @@
   "$id": "acquia_personconnector",
   "$schema": "https://schema.yext.com/config/km/connector/v1",
   "displayName": "Acquia Person Connector",
-  "entityType": "yext/ce_person",
+  "entityType": "ce_person",
   "source": {
     "sourceConfig": {
       "apiPullConfig": {
@@ -68,14 +68,35 @@
       "field": "yext/entityId",
       "header": "ID",
       "subfieldPath": []
+    },
+    {
+      "field": "yext/name",
+      "header": "Name",
+      "subfieldPath": []
+    },
+    {
+      "field": "c_jobTitle",
+      "header": "Job Title",
+      "subfieldPath": []
+    },
+    {
+      "field": "yext/emails",
+      "header": "Email",
+      "subfieldPath": []
+    },
+    {
+      "field": "yext/mainPhone",
+      "header": "Phone Number",
+      "subfieldPath": []
     }
   ],
   "scheduleConfig": {
-     "customSchedule": {
-          "timeZone": "America/New_York",
-          "startDate": "2021-06-23",
-          "startTime": "03:00",
-          "frequencyType": "DAILY"
-     }
+    "customSchedule": {
+      "timeZone": "America/New_York",
+      "startDate": "2021-06-23",
+      "startTime": "03:00",
+      "frequencyType": "DAILY"
+    },
+    "runMode": "DEFAULT"
   }
 }
