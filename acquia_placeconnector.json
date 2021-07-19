@@ -78,6 +78,11 @@
       },
       {
         "type": "JSON",
+        "header": "Postal Code",
+        "path": "attributes.field_place_address.postal_code"
+      },
+      {
+        "type": "JSON",
         "header": "Language Code",
         "path": "attributes.field_place_address.langcode"
       },
@@ -95,49 +100,31 @@
         "type": "JSON",
         "header": "Longitude",
         "path": "attributes.field_geofield.lon"
+      },
+      {
+        "type": "JSON",
+        "header": "Landing Page URL",
+        "path": "attributes.path.alias"
       }
     ]
   },
   "mappings": [
+    {
+      "field": "yext/landingPageUrl",
+      "header": "Landing Page URL",
+      "subfieldPath": []
+    },
     {
       "field": "yext/description",
       "header": "Description",
       "subfieldPath": []
     },
     {
-      "field": "yext/entityId",
-      "header": "ID",
-      "subfieldPath": []
-    },
-    {
-      "field": "yext/name",
-      "header": "Name",
-      "subfieldPath": []
-    },
-    {
       "field": "yext/address",
-      "header": "Address Line 1",
+      "header": "Postal Code",
       "subfieldPath": [
         {
-          "name": "line1"
-        }
-      ]
-    },
-    {
-      "field": "yext/address",
-      "header": "Address Line 2",
-      "subfieldPath": [
-        {
-          "name": "line2"
-        }
-      ]
-    },
-    {
-      "field": "yext/address",
-      "header": "Sublocality",
-      "subfieldPath": [
-        {
-          "name": "sublocality"
+          "name": "postalCode"
         }
       ]
     },
@@ -160,20 +147,6 @@
       ]
     },
     {
-      "field": "yext/address",
-      "header": "Country Code",
-      "subfieldPath": [
-        {
-          "name": "countryCode"
-        }
-      ]
-    },
-    {
-      "field": "yext/mainPhone",
-      "header": "Phone Number",
-      "subfieldPath": []
-    },
-    {
       "field": "yext/displayCoordinate",
       "header": "Latitude",
       "subfieldPath": [
@@ -190,14 +163,66 @@
           "name": "longitude"
         }
       ]
+    },
+    {
+      "field": "yext/name",
+      "header": "Name",
+      "subfieldPath": []
+    },
+    {
+      "field": "yext/address",
+      "header": "Sublocality",
+      "subfieldPath": [
+        {
+          "name": "sublocality"
+        }
+      ]
+    },
+    {
+      "field": "yext/entityId",
+      "header": "ID",
+      "subfieldPath": []
+    },
+    {
+      "field": "yext/address",
+      "header": "Country Code",
+      "subfieldPath": [
+        {
+          "name": "countryCode"
+        }
+      ]
+    },
+    {
+      "field": "yext/mainPhone",
+      "header": "Phone Number",
+      "subfieldPath": []
+    },
+    {
+      "field": "yext/address",
+      "header": "Address Line 1",
+      "subfieldPath": [
+        {
+          "name": "line1"
+        }
+      ]
+    },
+    {
+      "field": "yext/address",
+      "header": "Address Line 2",
+      "subfieldPath": [
+        {
+          "name": "line2"
+        }
+      ]
     }
   ],
   "scheduleConfig": {
-     "customSchedule": {
-          "timeZone": "America/New_York",
-          "startDate": "2021-06-23",
-          "startTime": "03:00",
-          "frequencyType": "DAILY"
-     }
+    "customSchedule": {
+      "timeZone": "America/New_York",
+      "startDate": "2021-06-23",
+      "startTime": "03:00",
+      "frequencyType": "DAILY"
+    },
+    "runMode": "DEFAULT"
   }
 }
