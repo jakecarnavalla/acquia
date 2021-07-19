@@ -6,12 +6,20 @@
   "enabled": true,
   "field": [
     {
+      "id": "yext/landingPageUrl",
+      "required": false
+    },
+    {
       "id": "yext/description",
       "required": false
     },
     {
       "id": "yext/name",
       "required": true
+    },
+    {
+      "id": "c_acquiaCategory",
+      "required": false
     },
     {
       "id": "yext/folder",
